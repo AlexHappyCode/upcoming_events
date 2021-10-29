@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, CardGroup, Card, Row, Col, Button } from 'react-bootstrap';
 
 
-
 export default function Content() {
 return(
   // Main Div is React Fragment make sure all other thigns are put inside of it
@@ -99,7 +98,7 @@ return(
               <Card.Text as="h4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fuga fugit quae quia adipisci consectetur non eaque saepe, quibusdam deleniti delectus recusandae, ipsam sint et ipsum consequatur nisi voluptate obcaecati.
               </Card.Text>
-              <div id= 'button'>
+              <div>
               <Button style={buttonStyle}>Go somewhere</Button>
               </div>
               </Card.Body>
@@ -121,16 +120,22 @@ return(
 // This is where the styles ares
 const buttonStyle = {
     alignItems: 'center',
+    float: 'right',
     backgroundColor: '#771EF7',
     padding: 10,
     
   };
 const headerStyle={
+    marginTop: -1,
+    marginLeft:-2,
+    marginRight:-2,
+    marginBottom:-1.5,
+
     backgroundColor: '#771EF7',
     color: '#FFFFFF',
 }
 const containerStyle ={
-    padding:10,
+    padding:0,
 }
 const rowStyle ={
   border:'2px solid black',

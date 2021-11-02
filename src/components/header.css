@@ -1,0 +1,9 @@
+.Header {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+  background-color: rgb(224, 202, 0);
+  color: azure;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}

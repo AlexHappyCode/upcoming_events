@@ -1,6 +1,8 @@
+import './header.css'
+
 function Header() {
     return (
-        <header className="App-header">
+        <header className="Header">
             Upcoming Events
         </header>
     )

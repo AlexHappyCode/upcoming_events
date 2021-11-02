@@ -1,12 +1,11 @@
-import React from 'react';
-import "./Header.css";
+import './header.css'
 
-function header(){
-    return(
-        <div>
-            <h1 className="Header">Upcoming Events</h1>
-        </div>
+function Header() {
+    return (
+        <header className="Header">
+            Upcoming Events
+        </header>
     )
 }
 
-export default header
+export default Header;

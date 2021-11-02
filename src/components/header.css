@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
 .Header {
   text-align: center;
   font-size: 40px;
@@ -6,5 +5,5 @@
   background-color: rgb(224, 202, 0);
   color: azure;
   margin: 0;
-  font-family: "Zen Kurenaido", sans-serif;
+  font-family: "Arial", sans-serif;
 }

@@ -5,12 +5,14 @@ const eventDescription = 'Lorem ipsum dolor sit amet, consectetur adipisicing el
                   quibusdam deleniti delectus recusandae, ipsam sint et ipsum\
                   consequatur nisi teest voluptate obcaecati.'
 
+const eventHeader = 'Coming Soon!'
+
 export default function Content() {
   return (
     <>
-      <EventCard eventTitle="First event" eventDescription={eventDescription}></EventCard>
-      <EventCard eventTitle="Second Event" eventDescription={eventDescription}></EventCard>
-      <EventCard eventTitle="Third Event" eventDescription={eventDescription}></EventCard>
+      <EventCard eventHeader={eventHeader} eventTitle="First event" eventDescription={eventDescription}></EventCard>
+      <EventCard eventHeader={eventHeader} eventTitle="Second Event" eventDescription={eventDescription}></EventCard>
+      <EventCard eventHeader={eventHeader} eventTitle="Third Event" eventDescription={eventDescription}></EventCard>
     </>
   );
 }

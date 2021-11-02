@@ -7,7 +7,11 @@ export default function EventCard(props) {
         <Card>
           <Row>
             <Col>
+            {
+              //If header is in element, it will output
+              props.header&&
               <Card.Header as="h5">{props.eventHeader}</Card.Header>
+            }
               <Card.Img
                 src={
                   "https://www.google.com/logos/doodles/2021/halloween-2021-6753651837109122-law.gif"

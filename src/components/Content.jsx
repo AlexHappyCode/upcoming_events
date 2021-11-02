@@ -6,18 +6,19 @@ const eventDescription =
                   quibusdam deleniti delectus recusandae, ipsam sint et ipsum\
                   consequatur nisi teest voluptate obcaecati.";
 
-const eventHeader = "Coming Soon!";
 
 export default function Content() {
   return (
     <>
       <EventCard
-        eventHeader={eventHeader}
+        header
+        eventHeader="Next Event"
         eventTitle="First event"
         eventDescription={eventDescription}
       ></EventCard>
       <EventCard
-        eventHeader={eventHeader}
+        header
+        eventHeader="Coming Soon!"
         eventTitle="Second Event"
         eventDescription={eventDescription}
       ></EventCard>

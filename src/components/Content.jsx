@@ -1,4 +1,4 @@
-import React from 'react';
+
 import EventCard from './EventCard';
 const eventDescription =
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos\
@@ -17,7 +17,7 @@ export default function Content() {
         eventDescription={eventDescription}
       ></EventCard>
       <EventCard
-        eventHeader
+        
         headerText="Coming Soon"
         headerText="Upcoming Events"
         eventTitle="Second Event"

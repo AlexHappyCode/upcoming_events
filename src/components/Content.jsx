@@ -6,6 +6,7 @@ const eventDescription =
                   quibusdam deleniti delectus recusandae, ipsam sint et ipsum\
                   consequatur nisi teest voluptate obcaecati.";
 
+const eventHeader = "Coming Soon!";
 
 export default function Content() {
   return (

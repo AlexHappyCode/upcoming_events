@@ -18,6 +18,7 @@ export default function Content() {
       ></EventCard>
       <EventCard
         eventHeader
+        headerText="Coming Soon"
         headerText="Upcoming Events"
         eventTitle="Second Event"
         eventDescription={eventDescription}

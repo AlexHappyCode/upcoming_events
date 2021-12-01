@@ -1,6 +1,21 @@
-import { Container, CardGroup, Card, Row, Col, Button } from "react-bootstrap";
+import { render } from "@testing-library/react";
+import { Container, CardGroup, Card, Row, Col, Button } from "react-bootstrap"
+import { Router,Route, Routes,useNavigate, Link } from 'react-router-dom';
+import ContentTailored from './ContentTailored'
 
 export default function EventCard(props) {
+  
+  
+  const navigate = useNavigate();
+  const toComponentB=()=>{
+    navigate('/ContentTailored',{state:{body:props.eventDescription,date: props.date,title: props.eventTitle,picture:props.eventPicture}});
+      }
+  <Router>
+            <Routes>
+                <Route path="/ContentTailored" element={<ContentTailored />} />
+            </Routes>
+            </Router>
+  let picture = props.eventPicture;          
   return (
     <Container>
       <CardGroup>
@@ -13,20 +28,19 @@ export default function EventCard(props) {
               <Card.Header as="h5">{props.eventHeader}</Card.Header>
             }
               <Card.Img
-                src={
-                  "https://www.google.com/logos/doodles/2021/halloween-2021-6753651837109122-law.gif"
-                }
+                src={(picture)}
                 fluid={true}
                 alt="Card image"
               />
             </Col>
             <Col>
               <Card.Body>
-                <Card.Text>Date here</Card.Text>
+                <Card.Text>{props.date}</Card.Text>
                 <Card.Title as="h2">{props.eventTitle}</Card.Title>
                 <Card.Text as="h4">{props.eventDescription}</Card.Text>
                 <div id="button">
-                  <Button>Go somewhere</Button>
+                <button onClick={()=>{toComponentB()}}></button>
+
                 </div>
               </Card.Body>
             </Col>
@@ -36,3 +50,4 @@ export default function EventCard(props) {
     </Container>
   );
 }
+
